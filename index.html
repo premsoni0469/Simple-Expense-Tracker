@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Expense Tracker</h1>
+    </div>
+    <div class="balance">
+        <h4>My Balance</h4>
+        ₹<p id="balance">0</p>
+    </div>
+    <div class="accounts">
+        <div class="income">
+            <h4>Income</h4>
+            ₹<p id="income">0</p>
+        </div>
+        <div class="expense">
+            <h4>Expense</h4>
+            ₹<p id="expense">0</p>
+        </div>
+    </div>
+    <div class="history">
+        <h3>History</h3>
+        <div class="history-items" id="history-items">
+            <!-- <span class="history-item" id="history-item">
+                <p id="historyNote">Title</p>
+                <p id="historyAmount">₹000</p>
+            </span> -->
+            <!-- <span class="history-item" id="history-item">
+                <p>Title</p>
+                <p>₹000</p>
+            </span> -->
+        </div>
+    </div>
+    <div class="transactions">
+        <h3>Add a new transaction:</h3>
+        <input type="number" placeholder="Enter Amount" id="amount">
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Note" id="note">
+        <br>
+        <small class="small">negative value = expense, positive value = income</small>
+        <br>
+        <div class="submit">
+            <input type="submit" value="Add transaction" id="submit" onclick="credit(amount)">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

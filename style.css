@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border: 1px solid grey;
+    width: 45%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    font-family: Inter;
+}
+@font-face {
+    font-family: Inter;
+    src: url("Inter-VariableFont_opsz\,wght.ttf");
+}
+.heading{
+    padding-top: 25px;
+}
+.balance{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.balance #balance{
+    font-weight: bold;
+    display: inline;
+}
+.accounts{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid rgb(183, 181, 181);
+    width: 50%;
+    margin: auto;
+}
+.income{
+    color: rgb(11, 176, 30);
+}
+.expense{
+    color: rgb(211, 60, 60);
+}
+.income p, .expense p{
+    font-weight: bold;
+    display: inline;
+}
+.history{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.history-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+.history-item{
+    border: 1px solid rgb(183, 181, 181);
+    padding: 10px;
+    /* display: none; */
+    display: block;
+}
+#amount, #note{
+    height: 30px;
+    padding-bottom: 5px;
+}
+.submit{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#submit{
+    background-color: rgb(85, 155, 75);
+    color: #fff;
+    padding: 15px;
+    width: 25%;
+    border: none;
+    border-radius: 20px;
+    font-weight: 750;
+}
